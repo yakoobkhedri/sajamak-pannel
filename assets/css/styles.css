@@ -424,19 +424,12 @@ table img{
     color: red!important;
   }
   /* editor */
-  .tox-tinymce{
-    min-height: 800px;
+  .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    background: #f9fafb;
   }
-  .tox-statusbar{
-    display: none!important;
+  .ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    border-color: #ccced13b!important;
   }
-  .tox .tox-menubar,.tox-toolbar__primary {
-    background-color: #f9fafb!important;
-  }
-  #mytextarea > *, #mytextarea{
-    border: none!important;
-  }
-
   .chatBox > div{
     margin-top: 30px!important;
   }
