@@ -13,6 +13,10 @@ openSidebar.addEventListener('click',function () {
   overlay.classList.add('active');
 })  
 
+// select2
+$(document).ready(function() {
+  $('.js-example-basic-multiple').select2();
+});  
 // data table
 
 // let table = new DataTable('#myTable');
@@ -31,10 +35,6 @@ $(document).ready( function () {
   });  
 } );  
 
-// select2
-$(document).ready(function() {
-  $('.js-example-basic-multiple').select2();
-});  
 
 // datapicker
 
