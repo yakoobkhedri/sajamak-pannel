@@ -19,7 +19,7 @@ let machineCategory = Array.from(document.querySelectorAll('.machineCategory opt
 let kalaType = Array.from(document.querySelectorAll('.kalaType option'));
 let activityFields = Array.from(document.querySelectorAll('.activityFields select'));
 let productName = Array.from(document.querySelectorAll('.productName > div'));
-let machineType = Array.from(document.querySelectorAll('.machineType select'));
+let machineType = Array.from(document.querySelectorAll('.machineType div'));
 let foreign = Array.from(document.querySelectorAll('#foreign option'));
 
 machineCategory.forEach((item) => {
