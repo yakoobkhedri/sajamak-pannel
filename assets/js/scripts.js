@@ -18,7 +18,7 @@ openSidebar.addEventListener('click', function () {
 let machineCategory = Array.from(document.querySelectorAll('.machineCategory option'));
 let kalaType = Array.from(document.querySelectorAll('.kalaType option'));
 let activityFields = Array.from(document.querySelectorAll('.activityFields select'));
-let productName = Array.from(document.querySelectorAll('.productName select'));
+let productName = Array.from(document.querySelectorAll('.productName > div'));
 let machineType = Array.from(document.querySelectorAll('.machineType select'));
 let foreign = Array.from(document.querySelectorAll('#foreign option'));
 

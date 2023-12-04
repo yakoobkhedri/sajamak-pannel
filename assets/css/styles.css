@@ -426,6 +426,12 @@ table img{
   .select2-container {
     width: 100%!important;
   }
+  .productName >div {
+    display: none;
+  }
+  .productName >div.first {
+    display: block;
+  }
   /* editor */
   .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
     background: #f9fafb;
