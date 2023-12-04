@@ -14,12 +14,11 @@ openSidebar.addEventListener('click', function () {
 })
 
 // select2
-$(document).ready(function () {
-  $('.js-example-basic-multiple').select2();
-});
 
 let machineCategory = Array.from(document.querySelectorAll('.machineCategory option'));
+let kalaType = Array.from(document.querySelectorAll('.kalaType option'));
 let activityFields = Array.from(document.querySelectorAll('.activityFields select'));
+let productName = Array.from(document.querySelectorAll('.productName select'));
 let machineType = Array.from(document.querySelectorAll('.machineType select'));
 let foreign = Array.from(document.querySelectorAll('#foreign option'));
 
@@ -63,41 +62,62 @@ foreign.forEach((item) => {
     })
   })
 })
+kalaType.forEach((item) => {
+  item.addEventListener('click', function () {
+    let kalaId = item.dataset.id;
+    productName.forEach((item) => {
+      let productId = item.dataset.id;
+      if (kalaId === productId) {
+        item.classList.add('d-block');
+        item.classList.remove('d-none');
+      } else {
+        item.classList.remove('d-block');
+        item.classList.add('d-none');
+      }
+    })
+  })
+})
+
+$(document).ready(function() {
+  $('.js-example-basic-single').select2({
+    tags: true
+  });
+});
 
 // data table
 
 // let table = new DataTable('#myTable');
-$(document).ready(function () {
-  $('#myTable').DataTable({
-    paging: false
-  });
-  $('#myTable2').DataTable({
-    paging: false
-  });
-  $('#myTable3').DataTable({
-    paging: false
-  });
-  $('#myTable4').DataTable({
-    paging: false
-  });
-});
+// $(document).ready(function () {
+//   $('#myTable').DataTable({
+//     paging: false
+//   });
+//   $('#myTable2').DataTable({
+//     paging: false
+//   });
+//   $('#myTable3').DataTable({
+//     paging: false
+//   });
+//   $('#myTable4').DataTable({
+//     paging: false
+//   });
+// });
 
 
 // datapicker
 
-jalaliDatepicker.startWatch();
+// jalaliDatepicker.startWatch();
 
 // sweet alert
 
-let submitForm = document.getElementById('submit');
+// let submitForm = document.getElementById('submit');
 
-submitForm.addEventListener('click', function (e) {
-  e.preventDefault();
-  Swal.fire({
-    position: 'top-center',
-    icon: 'success',
-    title: 'با موفقیت ثبت شد',
-    showConfirmButton: false,
-    timer: 3000
-  })
-})  
+// submitForm.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   Swal.fire({
+//     position: 'top-center',
+//     icon: 'success',
+//     title: 'با موفقیت ثبت شد',
+//     showConfirmButton: false,
+//     timer: 3000
+//   })
+// })  
