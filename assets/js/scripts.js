@@ -14,6 +14,11 @@ openSidebar.addEventListener('click', function () {
 })
 
 // select2
+$(document).ready(function() {
+  $('.js-example-basic-single').select2({
+    tags: true
+  });
+});
 
 let machineCategory = Array.from(document.querySelectorAll('.machineCategory option'));
 let kalaType = Array.from(document.querySelectorAll('.kalaType option'));
@@ -78,46 +83,40 @@ kalaType.forEach((item) => {
   })
 })
 
-$(document).ready(function() {
-  $('.js-example-basic-single').select2({
-    tags: true
-  });
-});
-
 // data table
 
-let table = new DataTable('#myTable');
-$(document).ready(function () {
-  $('#myTable').DataTable({
-    paging: false
-  });
-  $('#myTable2').DataTable({
-    paging: false
-  });
-  $('#myTable3').DataTable({
-    paging: false
-  });
-  $('#myTable4').DataTable({
-    paging: false
-  });
-});
+// let table = new DataTable('#myTable');
+// $(document).ready(function () {
+//   $('#myTable').DataTable({
+//     paging: false
+//   });
+//   $('#myTable2').DataTable({
+//     paging: false
+//   });
+//   $('#myTable3').DataTable({
+//     paging: false
+//   });
+//   $('#myTable4').DataTable({
+//     paging: false
+//   });
+// });
 
 
 // datapicker
 
-jalaliDatepicker.startWatch();
+// jalaliDatepicker.startWatch();
 
 // sweet alert
 
 // let submitForm = document.getElementById('submit');
 
-submitForm.addEventListener('click', function (e) {
-  e.preventDefault();
-  Swal.fire({
-    position: 'top-center',
-    icon: 'success',
-    title: 'با موفقیت ثبت شد',
-    showConfirmButton: false,
-    timer: 3000
-  })
-})  
+// submitForm.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   Swal.fire({
+//     position: 'top-center',
+//     icon: 'success',
+//     title: 'با موفقیت ثبت شد',
+//     showConfirmButton: false,
+//     timer: 3000
+//   })
+// })  

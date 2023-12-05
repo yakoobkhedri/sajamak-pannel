@@ -425,6 +425,10 @@ table img{
   }
   .select2-container {
     width: 100%!important;
+    z-index: 9999!important;
+  }
+  .select2-dropdown{
+    z-index: 9999!important;
   }
   .select2-container--default .select2-selection--single {
     border: 1px solid #aaaaaaa1!important;
