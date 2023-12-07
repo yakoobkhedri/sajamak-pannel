@@ -85,21 +85,12 @@ kalaType.forEach((item) => {
 
 // data table
 
-// let table = new DataTable('#myTable');
-// $(document).ready(function () {
-//   $('#myTable').DataTable({
-//     paging: false
-//   });
-//   $('#myTable2').DataTable({
-//     paging: false
-//   });
-//   $('#myTable3').DataTable({
-//     paging: false
-//   });
-//   $('#myTable4').DataTable({
-//     paging: false
-//   });
-// });
+let table = new DataTable('#myTable');
+$(document).ready(function () {
+  $('#myTable,#myTable2,#myTable3,#myTable4').DataTable({
+    paging: false
+  });
+});
 
 
 // datapicker
