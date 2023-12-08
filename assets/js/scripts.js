@@ -13,13 +13,6 @@ openSidebar.addEventListener('click', function () {
   overlay.classList.add('active');
 })
 
-// select2
-$(document).ready(function() {
-  $('.js-example-basic-single').select2({
-    tags: true
-  });
-});
-
 let machineCategory = Array.from(document.querySelectorAll('.machineCategory option'));
 let kalaType = Array.from(document.querySelectorAll('.kalaType option'));
 let activityFields = Array.from(document.querySelectorAll('.activityFields select'));
@@ -82,20 +75,6 @@ kalaType.forEach((item) => {
     })
   })
 })
-
-// data table
-
-let table = new DataTable('#myTable');
-$(document).ready(function () {
-  $('#myTable,#myTable2,#myTable3,#myTable4').DataTable({
-    paging: false
-  });
-});
-
-
-// datapicker
-
-// jalaliDatepicker.startWatch();
 
 // sweet alert
 
